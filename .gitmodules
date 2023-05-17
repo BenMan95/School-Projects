@@ -1,0 +1,36 @@
+[submodule "csci3081-hw4"]
+	path = csci3081-hw4
+	url = https://github.umn.edu/zimme636/hw4.git
+[submodule "csci3081-hw3"]
+	path = csci3081-hw3
+	url = https://github.umn.edu/umn-csci-3081-F22/chu00071-hw3.git
+[submodule "ee2361-project"]
+	path = ee2361-project
+	url = https://github.umn.edu/chu00071/ee2361_project.git
+[submodule "csci3081-lab01"]
+	path = csci3081-lab01
+	url = https://github.umn.edu/umn-csci-3081-F22/chu00071-lab01.git
+[submodule "csci3081-lab02"]
+	path = csci3081-lab02
+	url = https://github.umn.edu/umn-csci-3081-F22/chu00071-lab02.git
+[submodule "csci3081-lab03"]
+	path = csci3081-lab03
+	url = https://github.umn.edu/umn-csci-3081-F22/chu00071-lab03.git
+[submodule "csci3081-lab04"]
+	path = csci3081-lab04
+	url = https://github.umn.edu/umn-csci-3081-F22/chu00071-lab04.git
+[submodule "csci3081-lab05"]
+	path = csci3081-lab05
+	url = https://github.umn.edu/umn-csci-3081-F22/chu00071-lab05.git
+[submodule "csci3081-lab09"]
+	path = csci3081-lab09
+	url = https://github.umn.edu/umn-csci-3081-F22/Team-010-36-lab09.git
+[submodule "csci3081-lab10"]
+	path = csci3081-lab10
+	url = https://github.umn.edu/umn-csci-3081-F22/Team-010-36-lab10.git
+[submodule "csci2021"]
+	path = csci2021
+	url = https://github.umn.edu/chu00071/csci2021.git
+[submodule "ee2361"]
+	path = ee2361
+	url = https://github.umn.edu/chu00071/ee2361.git

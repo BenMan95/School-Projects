@@ -1,0 +1,332 @@
+\hypertarget{classCar}{}\doxysection{Car Class Reference}
+\label{classCar}\index{Car@{Car}}
+
+
+this class inhertis from the \mbox{\hyperlink{classIEntity}{I\+Entity}} class and represents a car in a physical system.  
+
+
+
+
+{\ttfamily \#include $<$Car.\+h$>$}
+
+
+
+Inheritance diagram for Car\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{classCar__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Car\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{classCar__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCar_aacc367d50839385178ef2540b1cab3a5}{Car}} (Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em Parameter constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCar_a5933bb06e96b159fe339a128abda888a}\label{classCar_a5933bb06e96b159fe339a128abda888a}} 
+\mbox{\hyperlink{classCar_a5933bb06e96b159fe339a128abda888a}{$\sim$\+Car}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCar_a4fb5c6e642d6a70d3a9fcc1012d4e561}{Get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Get the speed of the car. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classCar_a15bfb55a579f0a11f18fa339680baece}{Get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Gets the car position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classCar_ab75977e98e1265cd6dd391dfe3203886}{Get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em Get the direction of the car. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classCar_aac2af3568b3baa238a55f9142598c24d}{Get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em Get the destination of the car. \end{DoxyCompactList}\item 
+Json\+Object \mbox{\hyperlink{classCar_a86b73d3cd225d9d28e8c33e42e572a5d}{Get\+Details}} () const
+\begin{DoxyCompactList}\small\item\em Get the details of the car. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCar_a48f56ad767301351482afef84e7b9a74}{Get\+Availability}} () const
+\begin{DoxyCompactList}\small\item\em Get whether the car is available or not. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCar_a4fc28a905e68102e8d28a4d1244d8c2f}{Get\+Random\+Num}} (int min, int max)
+\begin{DoxyCompactList}\small\item\em Gets a random position given a min/max number. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classCar_acdabbf7134a8d21f197039c66debd453}{Get\+Rand\+Dest}} ()
+\begin{DoxyCompactList}\small\item\em Gets the random destination. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCar_aa9dde801228bdec170224a31f4b66b34}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em Update the car. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCar_a73dfbd1e8575d4bcae8581b7abfdd99a}{Set\+Position}} (\mbox{\hyperlink{classVector3}{Vector3}} pos\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the car position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCar_ad50dda9150d3e00185be0997277e940b}{Set\+Direction}} (\mbox{\hyperlink{classVector3}{Vector3}} dir\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the car direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCar_ac3f99ecb6c9ff631414987032320446d}{Set\+Destination}} (\mbox{\hyperlink{classVector3}{Vector3}} des\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the car destination. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCar_a96224a8dba9fce9eaf6d19f257849f74}{Rotate}} (double angle)
+\begin{DoxyCompactList}\small\item\em Rotate the car. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCar_aedbab19a18563e11d57fa593e5162df1}\label{classCar_aedbab19a18563e11d57fa593e5162df1}} 
+{\bfseries Car} (const \mbox{\hyperlink{classCar}{Car}} \&car)=delete
+\item 
+\mbox{\Hypertarget{classCar_a090e9a581dbfc749505eea0ec67fa6c7}\label{classCar_a090e9a581dbfc749505eea0ec67fa6c7}} 
+\mbox{\hyperlink{classCar}{Car}} \& {\bfseries operator=} (const \mbox{\hyperlink{classCar}{Car}} \&car)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+this class inhertis from the \mbox{\hyperlink{classIEntity}{I\+Entity}} class and represents a car in a physical system. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCar_aacc367d50839385178ef2540b1cab3a5}\label{classCar_aacc367d50839385178ef2540b1cab3a5}} 
+\index{Car@{Car}!Car@{Car}}
+\index{Car@{Car}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{Car()}{Car()}}
+{\footnotesize\ttfamily Car\+::\+Car (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Parameter constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em obj} & json object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCar_a48f56ad767301351482afef84e7b9a74}\label{classCar_a48f56ad767301351482afef84e7b9a74}} 
+\index{Car@{Car}!GetAvailability@{GetAvailability}}
+\index{GetAvailability@{GetAvailability}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{GetAvailability()}{GetAvailability()}}
+{\footnotesize\ttfamily bool Car\+::\+Get\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get whether the car is available or not. 
+
+\begin{DoxyReturn}{Returns}
+Whether the car is available or not. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+\mbox{\Hypertarget{classCar_aac2af3568b3baa238a55f9142598c24d}\label{classCar_aac2af3568b3baa238a55f9142598c24d}} 
+\index{Car@{Car}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Car\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the destination of the car. 
+
+\begin{DoxyReturn}{Returns}
+The destination of the car. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+\mbox{\Hypertarget{classCar_a86b73d3cd225d9d28e8c33e42e572a5d}\label{classCar_a86b73d3cd225d9d28e8c33e42e572a5d}} 
+\index{Car@{Car}!GetDetails@{GetDetails}}
+\index{GetDetails@{GetDetails}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{GetDetails()}{GetDetails()}}
+{\footnotesize\ttfamily Json\+Object Car\+::\+Get\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the details of the car. 
+
+\begin{DoxyReturn}{Returns}
+The details of the car. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+\mbox{\Hypertarget{classCar_ab75977e98e1265cd6dd391dfe3203886}\label{classCar_ab75977e98e1265cd6dd391dfe3203886}} 
+\index{Car@{Car}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Car\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the direction of the car. 
+
+\begin{DoxyReturn}{Returns}
+The direction of the car. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+\mbox{\Hypertarget{classCar_a15bfb55a579f0a11f18fa339680baece}\label{classCar_a15bfb55a579f0a11f18fa339680baece}} 
+\index{Car@{Car}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Car\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the car position. 
+
+\begin{DoxyReturn}{Returns}
+The car position 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+\mbox{\Hypertarget{classCar_acdabbf7134a8d21f197039c66debd453}\label{classCar_acdabbf7134a8d21f197039c66debd453}} 
+\index{Car@{Car}!GetRandDest@{GetRandDest}}
+\index{GetRandDest@{GetRandDest}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{GetRandDest()}{GetRandDest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Car\+::\+Get\+Rand\+Dest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the random destination. 
+
+\begin{DoxyReturn}{Returns}
+The random destination. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCar_a4fc28a905e68102e8d28a4d1244d8c2f}\label{classCar_a4fc28a905e68102e8d28a4d1244d8c2f}} 
+\index{Car@{Car}!GetRandomNum@{GetRandomNum}}
+\index{GetRandomNum@{GetRandomNum}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{GetRandomNum()}{GetRandomNum()}}
+{\footnotesize\ttfamily int Car\+::\+Get\+Random\+Num (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Gets a random position given a min/max number. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em min} & the minimum boundary. \\
+\hline
+\mbox{\texttt{ in}}  & {\em max} & the maximum boundary. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The random number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCar_a4fb5c6e642d6a70d3a9fcc1012d4e561}\label{classCar_a4fb5c6e642d6a70d3a9fcc1012d4e561}} 
+\index{Car@{Car}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Car\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the speed of the car. 
+
+\begin{DoxyReturn}{Returns}
+The speed of the car. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+\mbox{\Hypertarget{classCar_a96224a8dba9fce9eaf6d19f257849f74}\label{classCar_a96224a8dba9fce9eaf6d19f257849f74}} 
+\index{Car@{Car}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void Car\+::\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Rotate the car. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em angle} & the angle you would like to rotate the car. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+\mbox{\Hypertarget{classCar_ac3f99ecb6c9ff631414987032320446d}\label{classCar_ac3f99ecb6c9ff631414987032320446d}} 
+\index{Car@{Car}!SetDestination@{SetDestination}}
+\index{SetDestination@{SetDestination}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{SetDestination()}{SetDestination()}}
+{\footnotesize\ttfamily void Car\+::\+Set\+Destination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{des\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the car destination. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em des\+\_\+} & the destination you would like to set to the car. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+\mbox{\Hypertarget{classCar_ad50dda9150d3e00185be0997277e940b}\label{classCar_ad50dda9150d3e00185be0997277e940b}} 
+\index{Car@{Car}!SetDirection@{SetDirection}}
+\index{SetDirection@{SetDirection}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{SetDirection()}{SetDirection()}}
+{\footnotesize\ttfamily void Car\+::\+Set\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{dir\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the car direction. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dir\+\_\+} & the direction you would like to set to the car. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+\mbox{\Hypertarget{classCar_a73dfbd1e8575d4bcae8581b7abfdd99a}\label{classCar_a73dfbd1e8575d4bcae8581b7abfdd99a}} 
+\index{Car@{Car}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Car\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{pos\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the car position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos\+\_\+} & the position you would like to set to the car. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+\mbox{\Hypertarget{classCar_aa9dde801228bdec170224a31f4b66b34}\label{classCar_aa9dde801228bdec170224a31f4b66b34}} 
+\index{Car@{Car}!Update@{Update}}
+\index{Update@{Update}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Car\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the car. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dt} & delta time. \\
+\hline
+\mbox{\texttt{ in}}  & {\em scheduler} & the scheduled entity list. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity}{I\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/huan2055/csci-\/3081w-\/f22/hw4/libs/transit/include/Car.\+h\item 
+/home/huan2055/csci-\/3081w-\/f22/hw4/libs/transit/src/Car.\+cc\end{DoxyCompactItemize}

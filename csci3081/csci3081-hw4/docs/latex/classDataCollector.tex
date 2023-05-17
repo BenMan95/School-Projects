@@ -1,0 +1,218 @@
+\hypertarget{classDataCollector}{}\doxysection{Data\+Collector Class Reference}
+\label{classDataCollector}\index{DataCollector@{DataCollector}}
+
+
+This class is to collect data for trips and drones.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Collector.\+h$>$}
+
+
+
+Collaboration diagram for Data\+Collector\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classDataCollector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDataCollector_a973cac33cc9c994dc5b5321f0fba04be}\label{classDataCollector_a973cac33cc9c994dc5b5321f0fba04be}} 
+{\bfseries Data\+Collector} (\mbox{\hyperlink{classDataCollector}{Data\+Collector}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classDataCollector_a10ad4a2536cf9e5b96fa9d850f221898}\label{classDataCollector_a10ad4a2536cf9e5b96fa9d850f221898}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{classDataCollector}{Data\+Collector}} \&other)=delete
+\item 
+void \mbox{\hyperlink{classDataCollector_a18e77a2e1c977c71152102c050c832fe}{New\+Drone\+Record}} (int id, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Record new drone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataCollector_ac8fb5832131a9066cdaf8fff4edb7675}{Update\+Time}} (\mbox{\hyperlink{classDrone}{Drone}} $\ast$d, double dt)
+\begin{DoxyCompactList}\small\item\em Update time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataCollector_ac15a6158c517c9c7a6883fdc476a7273}{Update\+Dist}} (\mbox{\hyperlink{classDrone}{Drone}} $\ast$d, double dist)
+\begin{DoxyCompactList}\small\item\em Update distance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataCollector_ab191f4b07eb15b6c554f22e31f3b7655}{Begin\+Trip}} (\mbox{\hyperlink{classDrone}{Drone}} $\ast$d, \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Begin trips. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataCollector_aded798f44a0fe81b98b3534dc142262f}{Finish\+Trip}} (\mbox{\hyperlink{classDrone}{Drone}} $\ast$d)
+\begin{DoxyCompactList}\small\item\em Finish trip. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataCollector_ab7c5d27f6973f5642f601247b1a8722d}\label{classDataCollector_ab7c5d27f6973f5642f601247b1a8722d}} 
+void \mbox{\hyperlink{classDataCollector_ab7c5d27f6973f5642f601247b1a8722d}{Write\+Log}} ()
+\begin{DoxyCompactList}\small\item\em Write down collected data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classDataCollector}{Data\+Collector}} $\ast$ \mbox{\hyperlink{classDataCollector_a707f99d25bd2c5f76290320705689f32}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get instance data collector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDataCollector_a6f7eccfdf026a83317c386a18d16397d}\label{classDataCollector_a6f7eccfdf026a83317c386a18d16397d}} 
+\mbox{\hyperlink{classDataCollector_a6f7eccfdf026a83317c386a18d16397d}{Data\+Collector}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataCollector_a9f9ff1817bd0601ba33925c3378ac50e}\label{classDataCollector_a9f9ff1817bd0601ba33925c3378ac50e}} 
+\mbox{\hyperlink{classDataCollector_a9f9ff1817bd0601ba33925c3378ac50e}{$\sim$\+Data\+Collector}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ Trip\+Record $>$ \mbox{\hyperlink{classDataCollector_a5bc628a80677844ac3cc26f8951dae81}{trips}}
+\begin{DoxyCompactList}\small\item\em Get trips. \end{DoxyCompactList}\item 
+std\+::map$<$ int, Drone\+Record $>$ \mbox{\hyperlink{classDataCollector_a6aebbb2261da065c29751cc0312ed016}{drones}}
+\begin{DoxyCompactList}\small\item\em Get the drones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classDataCollector}{Data\+Collector}} $\ast$ \mbox{\hyperlink{classDataCollector_a89a06e60ba25fd709795858ab4f03386}{instance\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em Get the instance collected data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is to collect data for trips and drones. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataCollector_ab191f4b07eb15b6c554f22e31f3b7655}\label{classDataCollector_ab191f4b07eb15b6c554f22e31f3b7655}} 
+\index{DataCollector@{DataCollector}!BeginTrip@{BeginTrip}}
+\index{BeginTrip@{BeginTrip}!DataCollector@{DataCollector}}
+\doxysubsubsection{\texorpdfstring{BeginTrip()}{BeginTrip()}}
+{\footnotesize\ttfamily void Data\+Collector\+::\+Begin\+Trip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} $\ast$}]{d,  }\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Begin trips. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em d} & The pointer to the drone begins the trip. \\
+\hline
+\mbox{\texttt{ in}}  & {\em e} & The pointer to the entity begins the trip. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataCollector_aded798f44a0fe81b98b3534dc142262f}\label{classDataCollector_aded798f44a0fe81b98b3534dc142262f}} 
+\index{DataCollector@{DataCollector}!FinishTrip@{FinishTrip}}
+\index{FinishTrip@{FinishTrip}!DataCollector@{DataCollector}}
+\doxysubsubsection{\texorpdfstring{FinishTrip()}{FinishTrip()}}
+{\footnotesize\ttfamily void Data\+Collector\+::\+Finish\+Trip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} $\ast$}]{d }\end{DoxyParamCaption})}
+
+
+
+Finish trip. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em d} & The pointer to the drone that finished trip. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataCollector_a707f99d25bd2c5f76290320705689f32}\label{classDataCollector_a707f99d25bd2c5f76290320705689f32}} 
+\index{DataCollector@{DataCollector}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!DataCollector@{DataCollector}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}} $\ast$ Data\+Collector\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get instance data collector. 
+
+\begin{DoxyReturn}{Returns}
+The instance of the collected data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataCollector_a18e77a2e1c977c71152102c050c832fe}\label{classDataCollector_a18e77a2e1c977c71152102c050c832fe}} 
+\index{DataCollector@{DataCollector}!NewDroneRecord@{NewDroneRecord}}
+\index{NewDroneRecord@{NewDroneRecord}!DataCollector@{DataCollector}}
+\doxysubsubsection{\texorpdfstring{NewDroneRecord()}{NewDroneRecord()}}
+{\footnotesize\ttfamily void Data\+Collector\+::\+New\+Drone\+Record (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Record new drone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em id} & The id of the new drone would like to be recorded. \\
+\hline
+\mbox{\texttt{ in}}  & {\em name} & The name of the new drone would like to be recorded. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataCollector_ac15a6158c517c9c7a6883fdc476a7273}\label{classDataCollector_ac15a6158c517c9c7a6883fdc476a7273}} 
+\index{DataCollector@{DataCollector}!UpdateDist@{UpdateDist}}
+\index{UpdateDist@{UpdateDist}!DataCollector@{DataCollector}}
+\doxysubsubsection{\texorpdfstring{UpdateDist()}{UpdateDist()}}
+{\footnotesize\ttfamily void Data\+Collector\+::\+Update\+Dist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} $\ast$}]{d,  }\item[{double}]{dist }\end{DoxyParamCaption})}
+
+
+
+Update distance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em d} & The drone that would like to update distance. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dist} & The distance would like to be updated. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataCollector_ac8fb5832131a9066cdaf8fff4edb7675}\label{classDataCollector_ac8fb5832131a9066cdaf8fff4edb7675}} 
+\index{DataCollector@{DataCollector}!UpdateTime@{UpdateTime}}
+\index{UpdateTime@{UpdateTime}!DataCollector@{DataCollector}}
+\doxysubsubsection{\texorpdfstring{UpdateTime()}{UpdateTime()}}
+{\footnotesize\ttfamily void Data\+Collector\+::\+Update\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} $\ast$}]{d,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Update time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em d} & The pointer to the drone. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dt} & Delta time. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDataCollector_a6aebbb2261da065c29751cc0312ed016}\label{classDataCollector_a6aebbb2261da065c29751cc0312ed016}} 
+\index{DataCollector@{DataCollector}!drones@{drones}}
+\index{drones@{drones}!DataCollector@{DataCollector}}
+\doxysubsubsection{\texorpdfstring{drones}{drones}}
+{\footnotesize\ttfamily std\+::map$<$int, Drone\+Record$>$ Data\+Collector\+::drones\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get the drones. 
+
+\begin{DoxyReturn}{Returns}
+The vector to the drones. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataCollector_a89a06e60ba25fd709795858ab4f03386}\label{classDataCollector_a89a06e60ba25fd709795858ab4f03386}} 
+\index{DataCollector@{DataCollector}!instance\_@{instance\_}}
+\index{instance\_@{instance\_}!DataCollector@{DataCollector}}
+\doxysubsubsection{\texorpdfstring{instance\_}{instance\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}} $\ast$ Data\+Collector\+::instance\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Get the instance collected data. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the instance collected data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataCollector_a5bc628a80677844ac3cc26f8951dae81}\label{classDataCollector_a5bc628a80677844ac3cc26f8951dae81}} 
+\index{DataCollector@{DataCollector}!trips@{trips}}
+\index{trips@{trips}!DataCollector@{DataCollector}}
+\doxysubsubsection{\texorpdfstring{trips}{trips}}
+{\footnotesize\ttfamily std\+::vector$<$Trip\+Record$>$ Data\+Collector\+::trips\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get trips. 
+
+\begin{DoxyReturn}{Returns}
+The vector to the trips. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/huan2055/csci-\/3081w-\/f22/hw4/libs/transit/include/Data\+Collector.\+h\item 
+/home/huan2055/csci-\/3081w-\/f22/hw4/libs/transit/src/Data\+Collector.\+cc\end{DoxyCompactItemize}
