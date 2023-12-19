@@ -1,0 +1,42 @@
+extend layout
+
+block title
+    title Contact Log | The Stanley Parable 2
+
+append script
+    script(src="/js/table.js" defer)
+
+block content
+    form
+        p
+            label(for="msg") Message:
+            |
+            |
+            input#msg(type="text")
+        p
+            button#set Set
+            |
+            |
+            button#delete Delete
+    h1 Contacts
+    div#message(hidden)
+    table
+        thead
+            tr
+                th Name
+                th Email
+                th Meeting Date
+                th Meeting Type
+                th Soul Forfeited
+                th Delete Row
+        tbody
+            each contact in contacts
+                tr
+                    td= contact.cname
+                    td: name(href="mailto://" + contact.email)= contact.email
+                    td
+                        span.date= contact.mdate.toISOString().slice(0,10)
+                        span.time
+                    td= contact.meeting
+                    td= contact.soul ? "Yes" : "No"
+                    td: button.delete(data-id=contact.id) Delete Row

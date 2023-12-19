@@ -1,0 +1,32 @@
+extend layout
+
+block title
+    title Testimonies | The Stanley Parable 2
+
+mixin review(body, name)
+    div.review
+        p.review-body= body
+        p.reviewer-name= name
+
+block content
+    h1 Testimonies
+    iframe(width="560" height="315" title="YouTube video player"
+            src="https://www.youtube.com/embed/rAE9AgseCW8?si=l4yY6cyOZt4tMNHZ"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen)
+    div.review-list
+        +review(
+            "This was a great sequel to the original!",
+            "Richard Garfield")
+        +review(
+            "10/10 game, would play again.",
+            "Thomas Anderson")
+        +review(
+            "This is my favorite game ever!",
+            "Alan Johnson")
+        +review(
+            "This game cured my cancer.",
+            "Mike Allen")
+        +review(
+            "The broom closet ending was my favorite!",
+            "John Gamerson")

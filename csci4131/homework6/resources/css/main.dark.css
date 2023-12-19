@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #222222;
+    color: white;
+}
+h1 {
+    font-family: 'Roboto Condensed';
+    font-size: 7ex;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+strong {
+    color: red;
+}
+em {
+    color: lightgreen;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 75%;
+    margin: auto;
+}
+div.main {
+    width: 50%;
+    margin: 1em auto;
+    background-color: #444444;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #5f5f5f;
+    justify-content: space-around;
+    outline: 2px solid white;
+}
+nav div {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 1ex;
+    margin: 1ex;
+    border-radius: 2ex;
+    background-color: red;
+    color: white;
+}
+nav :hover {
+    background-color: crimson;
+}
+nav div :visited {
+    color:white;
+}
+#theme-button {
+    text-decoration: underline;
+    color: white;
+}
+
+div.review-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+div.review {
+    flex: 0 1 calc(50% - 4em);
+    background-color: #444444;
+    outline: 2px solid red;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+p.review-body {
+    font-style: italic;
+}
+p.reviewer-name {
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+}
+p.reviewer-name::before {
+    content:'\2014';
+}
+iframe {
+    background-color: #444444;
+    border-radius: 1em;
+    outline: 2px solid red;
+    padding: 1em;
+    display: block;
+    margin: auto;
+    border: 0px;
+}
+
+form {
+    display: block;
+    margin: 1em auto;
+    background-color: #444444;
+    width: 15em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+table {
+    margin: auto;
+    background-color: grey;
+    outline: 2px solid white;
+}
+th {
+    background-color: #880000;
+}
+tr:nth-child(odd) {
+    background-color: #444444;
+}
+tr, th, td {
+    outline: 2px solid white;
+    padding: 0.5em;
+}
+
+div#message {
+    text-align: center;
+    width: fit-content;
+    color: black;
+    background-color: yellow;
+    outline: 1px solid black;
+
+    padding: 0.5em;
+    margin: 1em auto;
+}

@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkblue;
+    outline: 2px solid gold;
+}
+nav img {
+    align-self: center;
+    max-height: 2em;
+}
+div.navleft {
+    flex: 1;
+    justify-content: left;
+
+    display: flex;
+}
+div.navright {
+    flex: 1;
+    justify-content: right;
+
+    display: flex;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 2em;
+    background-color: darkblue;
+    outline: 2px solid gold;
+}
+nav a:hover {
+    filter: brightness(120%);
+}
+
+h1, h2 {
+    width: 100%;
+    text-align: center;
+}
+
+div.post {
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: 1em;
+    width: 30em;
+    background-color: white;
+}
+div.post h2 {
+    margin: 0em;
+    text-align: left;
+}
+div.post h2 a {
+    color: black;
+}
+p.date {
+    color: black;
+    margin: 0.3em 0;
+    font-size: 0.8em;
+}
+div.post p {
+    word-wrap: break-word;
+}
+
+div.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+div.buttons > div {
+    flex: 1;
+    display: flex;
+}
+div.left-buttons :first-child {
+    margin-left: 0;
+}
+div.right-buttons :last-child {
+    margin-right: 0;
+}
+div.right-buttons {
+    justify-content: flex-end;
+}
+.button {
+    width: fit-content;
+    padding: 0.5em;
+    margin: 0 0.5em;
+    border-radius: 2em;
+    background-color: white;
+    outline: 1px solid black;
+}
+.button:hover {
+    filter: brightness(90%);
+}
+
+a.button {
+    text-decoration: none;
+    color: black;
+}
+div.liked {
+    background-color: lightgreen;
+}
+
+textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    resize: none;
+}
+
+div.sort {
+    width: fit-content;
+    margin: 1em auto;
+    padding: 0.5em;
+    border-radius: 1em;
+    color: gold;
+    background-color: darkblue;
+}
+div.sort a {
+    color: gold;
+}
+div.pages {
+    width: fit-content;
+    margin: 1em auto;
+    padding: 0.5em;
+    border-radius: 1em;
+    color: gold;
+    background-color: darkblue;
+}
+div.pages a {
+    color: gold;
+}
+
+form {
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: 1em;
+    text-align: center;
+    width: fit-content;
+    background-color: white;
+}
+form p:first-child {
+    margin: 0em;
+}

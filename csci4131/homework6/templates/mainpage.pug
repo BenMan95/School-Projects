@@ -1,0 +1,30 @@
+extend layout
+
+block title
+    title The Stanley Parable 2
+
+append script
+    script(src="/js/home.js" defer)
+
+block content
+    div#message(hidden)
+    h1 The Stanley Parable 2
+    h2 The second one
+    img(src="/images/image.jpg" alt="The Stanley Parable 2 Image")
+    div.main
+        p
+            | The Stanley Parable 2 is the exciting new sequel to The Stanley
+            | Parable! It includes all the features of the original game and
+            |
+            em more
+            | , including:
+        ol
+            li More comedy
+            li New content
+            li Removal of Geneva Convention violations
+            li And much much more!
+        p
+            | Buy The Stanley Parable 2
+            |
+            strong now
+            | !

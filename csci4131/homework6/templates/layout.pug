@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        block title
+            title The Stanley Parable 2
+        link(rel="stylesheet" href="/css/main.css")
+        block script
+            script(src="/js/main.js" defer)
+    body
+        nav
+            div: a(href="/main") Main
+            div: a(href="/testimonies") Testimonies
+            div: a(href="/contact") Contact Us
+            div: a(href="/admin/contactlog") Contact Log
+            div#theme-button Toggle Theme
+        block content
